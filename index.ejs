@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product List</title>
+  <link rel="stylesheet" href="/css/style.css">
+
+
+  <style>
+
+
+.h1{
+    color: red;
+    text-align: center;
+    font-size:xx-large;
+    
+  }
+  .head{
+    color: blue;
+    /* text-align: center; */
+    font-size: large;
+    margin-left: 540px;
+  }
+  .btn{
+    color: blue;
+    text-align:center;
+    font-size: medium;
+    margin-left: 590px;
+  }
+
+
+  </style>
+</head>
+<body style="background-color: rgb(170, 237, 237);">
+  <h1 class="h1">Product List</h1>
+  <ul class="head">
+    <% products.forEach(product => { %>
+      <li>
+        <%= product.name %> - <%= product.price %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="/edit/<%= product._id %>">Edit</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="/delete/<%= product._id %>">Delete</a>
+      </li>
+    <% }) %>
+  </ul>
+  <a href="/add" class="btn">Add New Product</a>
+</body>
+</html>

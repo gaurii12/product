@@ -2,7 +2,7 @@
 product web application with mongo db database connection
 Develop a web application that enables users to view a comprehensive list of products and allows them to add, update, or delete items from the list. Ensure that the design is responsive. The required tech stack for this project includes Node.js, Express.js, JavaScript, MongoDB, HTML5, and CSS3.
 
-App functionality: 
+**App functionality: **
 
 Create a new product
 Update an existing product
@@ -34,11 +34,11 @@ Next, include the steps for installing the required dependencies for the project
 Now, provide instructions on how to run the web application.
 go to terminal and write a command node app.js or install nodemon globaly inyour project the command is npm install -g nodemon
 
-4. Start MongoDB:
+**4. Start MongoDB:**
  Make sure MongoDB is running on your machine.
 
-**workinhg of the project is as follows**
-   1. Create a new product:
+**working of the project is as follows**
+1. Create a new product:
 To create a new product, click on the "Add Product" button on the main page.
 Fill in the required information, such as product name and price.
 Click the "Submit" button to add the product to the list.
